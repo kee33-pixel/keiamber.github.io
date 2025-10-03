@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smoothie Recipes Hub</title>
+  <title>Fav Smoothie Recipes</title>
   <style>
     body {
       font-family: "Times New Roman", Times, serif;
-      background-color: #ffe6f0; /* light pink */
+      background-color: #eec7d7; /* light pink */
       margin: 0;
       padding: 0;
       text-align: center;
@@ -22,7 +22,7 @@
       font-size: 2.5rem;
       margin: 0;
       letter-spacing: 2px;
-      color: #a61c6b; /* darker pink for contrast */
+      color: #e054a3; /* darker pink for contrast */
     }
 
     p {
@@ -40,17 +40,38 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       text-align: left;
     }
+
+    .recipe {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #e054a3;
+      margin-bottom: 0.5rem;
+    }
+
+    img {
+      width: 200px; /* adjust size */
+      border-radius: 10px; /* optional rounded corners */
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Smoothie Recipes Hub</h1>
-    <p>Share, discover, and enjoy delicious smoothie blends!</p>
+    <img src="bratz.png" alt="Bratz picture">
+    <h1>Fav Smoothie Recipes</h1>
   </header>
 
   <main>
-    <h2>Example Recipe</h2>
-    <p><strong>Berry Blast:</strong> Strawberries, blueberries, yogurt, honey. Blend until smooth.</p>
+    <div class="recipe">
+      <h2>Pineapple Crunch</h2>
+      <p><strong>Ingredients:</strong> Spinach, pineapples, banana, granola, honey, oat milk, peanut butter.</p>
+    </div>
+
+    <div class="recipe">
+      <h2>Pecan Strawberry Banana</h2>
+      <p><strong>Ingredients:</strong> Frozen strawberries, bananas, peanut butter, protein powder, butter pecan ice cream, spinach.</p>
+    </div>
   </main>
 </body>
 </html>
