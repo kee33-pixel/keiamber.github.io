@@ -25,34 +25,41 @@
       color: #e054a3; /* darker pink for contrast */
     }
 
-    p {
-      font-size: 1.2rem;
-      color: #555;
-      margin-top: 0.5rem;
-    }
-
     main {
-      max-width: 700px;
+      max-width: 800px;
       margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: left;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
     }
 
     .recipe {
-      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: transform 0.2s ease;
     }
 
-    h2 {
+    .recipe:hover {
+      transform: scale(1.05);
+    }
+
+    .recipe h2 {
       color: #e054a3;
       margin-bottom: 0.5rem;
     }
 
+    .recipe p {
+      font-size: 1rem;
+      color: #444;
+    }
+
     img {
-      width: 200px; /* adjust size */
-      border-radius: 10px; /* optional rounded corners */
+      width: 200px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -64,12 +71,12 @@
 
   <main>
     <div class="recipe">
-      <h2>Pineapple Crunch</h2>
+      <h2>🍍 Pineapple Crunch</h2>
       <p><strong>Ingredients:</strong> Spinach, pineapples, banana, granola, honey, oat milk, peanut butter.</p>
     </div>
 
     <div class="recipe">
-      <h2>Pecan Strawberry Banana</h2>
+      <h2>🍓 Pecan Strawberry Banana</h2>
       <p><strong>Ingredients:</strong> Frozen strawberries, bananas, peanut butter, protein powder, butter pecan ice cream, spinach.</p>
     </div>
   </main>
